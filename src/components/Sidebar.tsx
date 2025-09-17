@@ -8,7 +8,7 @@ export default function Sidebar() {
 	return (
 		<div className="sidebar-container">
 			<div className="sidebar-logo">
-				<img src="src/assets/logo.png" alt="Finance Planner Logo"/>
+				<img src="src/assets/logo.svg" alt="Finance Planner Logo"/>
 			</div>
 			<nav className="sidebar-nav">
 				<NavLink to="/dashboard" className={linkClass}>Dashboard</NavLink>
