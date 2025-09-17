@@ -1,0 +1,54 @@
+/* DataImportExport.css - Data import/export page styles */
+
+.data-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .data-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.file-input {
+  display: block;
+  width: 100%;
+  border-radius: 0.375rem;
+  border: 1px solid #d1d5db;
+  padding: 0.5rem;
+}
+
+.file-input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.help-text {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+.success-message {
+  font-size: 0.875rem;
+  color: #15803d;
+  margin-top: 0.5rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .form-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.form-input-span-2 {
+  grid-column: span 2;
+}

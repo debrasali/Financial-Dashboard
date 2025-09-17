@@ -1,0 +1,53 @@
+/* Dashboard.css - Dashboard page styles */
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.chart-container {
+  height: 300px;
+}
+
+.no-data {
+  color: #6b7280;
+}
+
+.pie-chart-colors {
+  background-color: #60a5fa;
+}
+
+.pie-chart-colors:nth-child(2) {
+  background-color: #34d399;
+}
+
+.pie-chart-colors:nth-child(3) {
+  background-color: #f472b6;
+}
+
+.pie-chart-colors:nth-child(4) {
+  background-color: #fbbf24;
+}
+
+.pie-chart-colors:nth-child(5) {
+  background-color: #a78bfa;
+}
+
+.pie-chart-colors:nth-child(6) {
+  background-color: #f87171;
+}
+
+.pie-chart-colors:nth-child(7) {
+  background-color: #4ade80;
+}
+
+.pie-chart-colors:nth-child(8) {
+  background-color: #22d3ee;
+}

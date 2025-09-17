@@ -1,0 +1,106 @@
+/* SavingsPlanner.css - Savings planner page styles */
+
+.savings-grid-3 {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .savings-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.savings-grid-2 {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .savings-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.input-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.spending-info {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+.savings-info {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.goals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.goal-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+
+.goal-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.goal-name {
+  font-weight: 500;
+}
+
+.goal-target {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.goal-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.what-if-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.what-if-help {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+.projection-text {
+  margin: 0;
+}
+
+.projection-amount {
+  font-weight: 600;
+}
+
+.shortfall-positive {
+  color: #dc2626;
+}
+
+.shortfall-negative {
+  color: #16a34a;
+}

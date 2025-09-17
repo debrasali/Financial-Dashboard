@@ -1,0 +1,44 @@
+/* Sidebar.css - Navigation sidebar styles */
+
+.sidebar-container {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidebar-logo {
+  padding: 0.5rem;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s, color 0.2s;
+  text-decoration: none;
+}
+
+.nav-link-active {
+  background-color: #2563eb;
+  color: white;
+}
+
+.nav-link-inactive {
+  color: #374151;
+}
+
+.nav-link-inactive:hover {
+  background-color: #f3f4f6;
+}

@@ -1,0 +1,31 @@
+/* App.css - Main application styles */
+
+.app-container {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+.app-layout {
+  display: flex;
+}
+
+.app-sidebar {
+  width: 16rem;
+  flex-shrink: 0;
+  border-right: 1px solid #e5e7eb;
+  background-color: white;
+}
+
+.app-main {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.not-found {
+  padding: 2rem;
+}
+
+.not-found-link {
+  color: #2563eb;
+}
