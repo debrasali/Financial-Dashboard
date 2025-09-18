@@ -10,8 +10,35 @@
   gap: 1.5rem;
 }
 
-.sidebar-logo {
+/* Header containing logo text and hamburger */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar-logo-text {
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  font-weight: 700;
+  width: 100%;
+  line-height: 1.1;
+}
+
+/* Hamburger button */
+.sidebar-toggle {
+  display: none;
+  background: transparent;
+  border: none;
   padding: 0.5rem;
+  cursor: pointer;
+}
+
+.sidebar-toggle-bar {
+  display: block;
+  width: 1.25rem;
+  height: 2px;
+  background-color: #374151;
+  margin: 3px 0;
 }
 
 .sidebar-nav {
@@ -41,4 +68,26 @@
 
 .nav-link-inactive:hover {
   background-color: #f3f4f6;
+}
+
+/* Mobile behavior: collapse nav by default, show hamburger */
+@media (max-width: 767px) {
+  .sidebar-container {
+    position: relative;
+    height: auto;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .sidebar-toggle {
+    display: inline-block;
+  }
+
+  .sidebar-nav {
+    display: none;
+    padding-top: 0.5rem;
+  }
+
+  .sidebar-open .sidebar-nav {
+    display: flex;
+  }
 }

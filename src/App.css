@@ -29,3 +29,16 @@
 .not-found-link {
   color: #2563eb;
 }
+
+/* Mobile layout: stack sidebar (as header) above main */
+@media (max-width: 767px) {
+  .app-layout {
+    flex-direction: column;
+  }
+
+  .app-sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+}
