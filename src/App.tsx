@@ -22,6 +22,9 @@ function App() {
 					</Routes>
 				</main>
 			</div>
+			<footer className="app-footer">
+				<p>&copy; {new Date().getFullYear()} Deandro Elbert Brasali. All rights reserved.</p>
+			</footer>
 		</div>
 	);
 }
